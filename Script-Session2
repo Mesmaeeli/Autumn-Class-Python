@@ -1,0 +1,772 @@
+
+>>> str1 = 'salam donya'
+>>> str2 = 'man mohammad hastam'
+>>> type(str1)
+<class 'str'>
+>>> type(str2)
+<class 'str'>
+>>> str1 + str2
+'salam donyaman mohammad hastam'
+>>> str1 - str2
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    str1 - str2
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>> str2 * str3
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    str2 * str3
+NameError: name 'str3' is not defined
+>>> str2 * str1
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    str2 * str1
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> str2 * 2
+'man mohammad hastamman mohammad hastam'
+>>> str1 * 3
+'salam donyasalam donyasalam donya'
+>>> 's' in str1
+True
+>>> str1 > str2
+True
+>>> str2 > str1
+False
+>>> str1
+'salam donya'
+>>> str2
+'man mohammad hastam'
+>>> 'a' > 'b'
+False
+>>> 'b' > 'a'
+True
+>>> 'aa' > 'ab'
+False
+>>> 'ab' > 'aa'
+True
+>>> 'ac' > 'bb'
+False
+>>> 'bb' > 'ac'
+True
+>>> 'acc' > 'ac'
+True
+>>> list1 = [12,13,99]
+>>> type(list1)
+<class 'list'>
+>>> list1[0]
+12
+>>> list1[1]
+13
+>>> list1[100]
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    list1[100]
+IndexError: list index out of range
+>>> list2 = ['salam',12,True,'mohammad',45,78]
+>>> list2[0:2]
+['salam', 12]
+>>> list2[2:4]
+[True, 'mohammad']
+>>> list2[3:]
+['mohammad', 45, 78]
+>>> list2[0]
+'salam'
+>>> list2[0][2]
+'l'
+>>> list2[1][2]
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    list2[1][2]
+TypeError: 'int' object is not subscriptable
+>>> list3 = [45,34,90,['a','b','bye',12],34,12,10,'salam']
+>>> len(list3)
+8
+>>> list3[3]
+['a', 'b', 'bye', 12]
+>>> list3[3][2]
+'bye'
+>>> list3[3][2][0]
+'b'
+>>> list2[2][1]
+Traceback (most recent call last):
+  File "<pyshell#39>", line 1, in <module>
+    list2[2][1]
+TypeError: 'bool' object is not subscriptable
+>>> list2
+['salam', 12, True, 'mohammad', 45, 78]
+>>> list2[:3]
+['salam', 12, True]
+>>> list3[-5][2][-3]
+'b'
+>>> list3[3][2][0]
+'b'
+>>> str1
+'salam donya'
+>>> str1[0] = 'S'
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    str1[0] = 'S'
+TypeError: 'str' object does not support item assignment
+>>> list2
+['salam', 12, True, 'mohammad', 45, 78]
+>>> list1
+[12, 13, 99]
+>>> list1[0] = 120
+>>> list1
+[120, 13, 99]
+>>> id(list1)
+1864743781384
+>>> list1[2] = 999
+>>> list1
+[120, 13, 999]
+>>> id(list1)
+1864743781384
+>>> list1
+[120, 13, 999]
+>>> list1[1] = 0
+>>> list1
+[120, 0, 999]
+>>> list2
+['salam', 12, True, 'mohammad', 45, 78]
+>>> list2[1:4] = [50,100,150]
+>>> list2
+['salam', 50, 100, 150, 45, 78]
+>>> list2[1:4] = [1,1,1,1,1,1,1,1,1,1,1]
+>>> list2
+['salam', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 45, 78]
+>>> list2[1:-2] = []
+>>> list2
+['salam', 45, 78]
+>>> list2
+['salam', 45, 78]
+>>> list2[1] = []
+>>> list2
+['salam', [], 78]
+>>> list2[1:2] = []
+>>> list2
+['salam', 78]
+>>> list2[1] = None
+>>> list2
+['salam', None]
+>>> list2
+['salam', None]
+>>> del(list2)
+>>> list2
+Traceback (most recent call last):
+  File "<pyshell#73>", line 1, in <module>
+    list2
+NameError: name 'list2' is not defined
+>>> list3
+[45, 34, 90, ['a', 'b', 'bye', 12], 34, 12, 10, 'salam']
+>>> del(list3[3])
+>>> list3
+[45, 34, 90, 34, 12, 10, 'salam']
+>>> list1
+[120, 0, 999]
+>>> list1 + list1
+[120, 0, 999, 120, 0, 999]
+>>> list1 + 100
+Traceback (most recent call last):
+  File "<pyshell#79>", line 1, in <module>
+    list1 + 100
+TypeError: can only concatenate list (not "int") to list
+>>> list1 * list1
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    list1 * list1
+TypeError: can't multiply sequence by non-int of type 'list'
+>>> list1 * 2
+[120, 0, 999, 120, 0, 999]
+>>> list1 * 3
+[120, 0, 999, 120, 0, 999, 120, 0, 999]
+>>> list1 - list1
+Traceback (most recent call last):
+  File "<pyshell#83>", line 1, in <module>
+    list1 - list1
+TypeError: unsupported operand type(s) for -: 'list' and 'list'
+>>> list1
+[120, 0, 999]
+>>> 0 in list1
+True
+>>> 100 in list1
+False
+>>> 100 not in list1
+True
+>>> 0 not in list1
+False
+>>> list3
+[45, 34, 90, 34, 12, 10, 'salam']
+>>> 'a' in list3
+False
+>>> 'salam' in list3
+True
+>>> list4 = [12,[45,78,90,100],45,89,0]
+>>> 'a' in list3[-1]
+True
+>>> obj1 = '100'
+>>> obj2 = 100
+>>> type(obj1)
+<class 'str'>
+>>> type(obj2)
+<class 'int'>
+>>> list3[-1][-1] = 'M'
+Traceback (most recent call last):
+  File "<pyshell#98>", line 1, in <module>
+    list3[-1][-1] = 'M'
+TypeError: 'str' object does not support item assignment
+>>> list3[-1] = 'salaM'
+>>> list4 = [12,[45,78,90,100],45,89,0]
+>>> 12 in list4
+True
+>>> 100 in list4
+False
+>>> list1
+[120, 0, 999]
+>>> list1.append(10)
+>>> list1
+[120, 0, 999, 10]
+>>> list1.append('salam')
+>>> list1
+[120, 0, 999, 10, 'salam']
+>>> list1.append([12,12])
+>>> list1
+[120, 0, 999, 10, 'salam', [12, 12]]
+>>> list1.extend('salam')
+>>> list1
+[120, 0, 999, 10, 'salam', [12, 12], 's', 'a', 'l', 'a', 'm']
+>>> list1.extend([12,'12',89,'salam'])
+>>> list2
+Traceback (most recent call last):
+  File "<pyshell#113>", line 1, in <module>
+    list2
+NameError: name 'list2' is not defined
+>>> list1
+[120, 0, 999, 10, 'salam', [12, 12], 's', 'a', 'l', 'a', 'm', 12, '12', 89, 'salam']
+>>> list1.extend('12')
+>>> list1
+[120, 0, 999, 10, 'salam', [12, 12], 's', 'a', 'l', 'a', 'm', 12, '12', 89, 'salam', '1', '2']
+>>> list1.extend(12)
+Traceback (most recent call last):
+  File "<pyshell#117>", line 1, in <module>
+    list1.extend(12)
+TypeError: 'int' object is not iterable
+>>> list1.extend([12,'12',89,'salam'])
+>>> list1
+[120, 0, 999, 10, 'salam', [12, 12], 's', 'a', 'l', 'a', 'm', 12, '12', 89, 'salam', '1', '2', 12, '12', 89, 'salam']
+>>> list5 = [1,1,1,1,1,1,1,1]
+>>> list5
+[1, 1, 1, 1, 1, 1, 1, 1]
+>>> list3
+[45, 34, 90, 34, 12, 10, 'salaM']
+>>> list3.extend(list3)
+>>> list3
+[45, 34, 90, 34, 12, 10, 'salaM', 45, 34, 90, 34, 12, 10, 'salaM']
+>>> list3.extend(list3[-1])
+>>> list3
+[45, 34, 90, 34, 12, 10, 'salaM', 45, 34, 90, 34, 12, 10, 'salaM', 's', 'a', 'l', 'a', 'M']
+>>> list5 = [9,3,9,0,10]
+>>> list5.insert(1,4)
+>>> list5
+[9, 4, 3, 9, 0, 10]
+>>> list5.remove(9)
+>>> list5
+[4, 3, 9, 0, 10]
+>>> list5.remove(9)
+>>> list5
+[4, 3, 0, 10]
+>>> list5.remove(9)
+Traceback (most recent call last):
+  File "<pyshell#134>", line 1, in <module>
+    list5.remove(9)
+ValueError: list.remove(x): x not in list
+>>> list5.insert(1,23,45)
+Traceback (most recent call last):
+  File "<pyshell#135>", line 1, in <module>
+    list5.insert(1,23,45)
+TypeError: insert() takes exactly 2 arguments (3 given)
+>>> list5.index(10)
+3
+>>> list5.index(120)
+Traceback (most recent call last):
+  File "<pyshell#137>", line 1, in <module>
+    list5.index(120)
+ValueError: 120 is not in list
+>>> list6 = [4,4,7,9,1,0,4,0]
+>>> list6.count(4)
+3
+>>> list6.reverse()
+>>> list6
+[0, 4, 0, 1, 9, 7, 4, 4]
+>>> list6.clear()
+>>> list6
+[]
+>>> del(list6)
+>>> list6
+Traceback (most recent call last):
+  File "<pyshell#145>", line 1, in <module>
+    list6
+NameError: name 'list6' is not defined
+>>> list7 = [4,1,9,4,1,10,40,12,89]
+>>> list7.sort()
+>>> list7
+[1, 1, 4, 4, 9, 10, 12, 40, 89]
+>>> list8 = ['hasan','mohamad','ali','hosein','abbas']
+>>> list8.sort()
+>>> list8
+['abbas', 'ali', 'hasan', 'hosein', 'mohamad']
+>>> 'abbas' < 'mohamad'
+True
+>>> list9 = [4,2,'salam',7,'hasan']
+>>> list9.sort
+<built-in method sort of list object at 0x000001B22B5F0F88>
+>>> list9.sort()
+Traceback (most recent call last):
+  File "<pyshell#155>", line 1, in <module>
+    list9.sort()
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> list9
+[4, 2, 'salam', 7, 'hasan']
+>>> list9[::-1]
+['hasan', 7, 'salam', 2, 4]
+>>> list6
+Traceback (most recent call last):
+  File "<pyshell#158>", line 1, in <module>
+    list6
+NameError: name 'list6' is not defined
+>>> list6 = [4,4,7,9,1,0,4,0]
+>>> list6.index(4)
+0
+>>> list6.index(4,1)
+1
+>>> list6.index(4,2)
+6
+>>> list6
+[4, 4, 7, 9, 1, 0, 4, 0]
+>>> id(list6)
+1864743869320
+>>> list10 = [1,2,3,4,5]
+>>> list10
+[1, 2, 3, 4, 5]
+>>> list10[-1:-5:-1]
+[5, 4, 3, 2]
+>>> list11 = list1[-1:-5]
+>>> list11
+[]
+>>> list11 = list1[-1:-5]
+>>> list11 = list10[-1:-5]
+>>> list11
+[]
+>>> list110[-1::-1]
+Traceback (most recent call last):
+  File "<pyshell#173>", line 1, in <module>
+    list110[-1::-1]
+NameError: name 'list110' is not defined
+>>> list10[-1::-1]
+[5, 4, 3, 2, 1]
+>>> lsit6
+Traceback (most recent call last):
+  File "<pyshell#175>", line 1, in <module>
+    lsit6
+NameError: name 'lsit6' is not defined
+>>> list6
+[4, 4, 7, 9, 1, 0, 4, 0]
+>>> id(list)
+1789947280
+>>> list12 = list6[2:6]
+>>> list1
+[120, 0, 999, 10, 'salam', [12, 12], 's', 'a', 'l', 'a', 'm', 12, '12', 89, 'salam', '1', '2', 12, '12', 89, 'salam']
+>>> list12
+[7, 9, 1, 0]
+>>> list6
+[4, 4, 7, 9, 1, 0, 4, 0]
+>>> list12[1] = 99
+>>> list12
+[7, 99, 1, 0]
+>>> list6
+[4, 4, 7, 9, 1, 0, 4, 0]
+>>> list6[3] = 10
+>>> list6[-1] = 8
+>>> list6
+[4, 4, 7, 10, 1, 0, 4, 8]
+>>> list_new = list6
+>>> listt6
+Traceback (most recent call last):
+  File "<pyshell#189>", line 1, in <module>
+    listt6
+NameError: name 'listt6' is not defined
+>>> list6
+[4, 4, 7, 10, 1, 0, 4, 8]
+>>> list_new
+[4, 4, 7, 10, 1, 0, 4, 8]
+>>> list6[0] = 0
+>>> list6[1] = 0
+>>> list6
+[0, 0, 7, 10, 1, 0, 4, 8]
+>>> list_new
+[0, 0, 7, 10, 1, 0, 4, 8]
+>>> id(list6)
+1864743869320
+>>> id(list_new)
+1864743869320
+>>> list_copy = list6.copy()
+>>> list_copy
+[0, 0, 7, 10, 1, 0, 4, 8]
+>>> id(list_copy)
+1864743869832
+>>> list6[0] = 100
+>>> list6
+[100, 0, 7, 10, 1, 0, 4, 8]
+>>> list_copy
+[0, 0, 7, 10, 1, 0, 4, 8]
+>>> list_new
+[100, 0, 7, 10, 1, 0, 4, 8]
+>>> list6[0] = 0
+>>> list6
+[0, 0, 7, 10, 1, 0, 4, 8]
+>>> list_copy
+[0, 0, 7, 10, 1, 0, 4, 8]
+>>> list6 = list_copy
+>>> list_copy = list6.copy()
+>>> list6
+[0, 0, 7, 10, 1, 0, 4, 8]
+>>> list_copy
+[0, 0, 7, 10, 1, 0, 4, 8]
+>>> list6 == list_copy
+True
+>>> list6 is list_copy
+False
+>>> list1 = [1,2,3]
+>>> list2 = list1[:]
+>>> id(list1)
+1864731389512
+>>> id(list2)
+1864743781384
+>>> t1 = (12,5,6,9)
+>>> type(t1)
+<class 'tuple'>
+>>> t2 = 5,9,3,7
+>>> type(t2)
+<class 'tuple'>
+>>> t3 = [4,5,6]
+>>> t4 = (5,6)
+>>> t5 = (10)
+>>> type(t5)
+<class 'int'>
+>>> t6 = ('salam')
+>>> type(t6)
+<class 'str'>
+>>> t7 = (10,)
+>>> type(t7)
+<class 'tuple'>
+>>> t8 = ('salam',)
+>>> type(t8)
+<class 'tuple'>
+>>> t1
+(12, 5, 6, 9)
+>>> t1[0]
+12
+>>> t1[:3]
+(12, 5, 6)
+>>> t1
+(12, 5, 6, 9)
+>>> t1[0] = 100
+Traceback (most recent call last):
+  File "<pyshell#236>", line 1, in <module>
+    t1[0] = 100
+TypeError: 'tuple' object does not support item assignment
+>>> len(t1)
+4
+>>> t1 + t1
+(12, 5, 6, 9, 12, 5, 6, 9)
+>>> t1 * 2
+(12, 5, 6, 9, 12, 5, 6, 9)
+>>> t1 * 3
+(12, 5, 6, 9, 12, 5, 6, 9, 12, 5, 6, 9)
+>>> 12 in t1
+True
+>>> 100 in t1
+False
+>>> t1
+(12, 5, 6, 9)
+>>> t2
+(5, 9, 3, 7)
+>>> t3 = t1,t2
+>>> t3
+((12, 5, 6, 9), (5, 9, 3, 7))
+>>> t4 = t2,t1
+>>> t4
+((5, 9, 3, 7), (12, 5, 6, 9))
+>>> t4 = (6,6,6,6,2,3)
+>>> t4.count(6)
+4
+>>> t4.index(2)
+4
+>>> t4.index(3)
+5
+>>> t1 = (1,2,7,9,0)
+>>> t2 = (2,6,1,9,0)
+>>> 
+>>> t1 > t2
+False
+>>> t3 = (1,2,4,8)
+>>> t1 > t3
+True
+>>> dict1 = {1:'one',2:'two'}
+>>> dict1[1]
+'one'
+>>> dict1[2]
+'two'
+>>> dict1[1:2]
+Traceback (most recent call last):
+  File "<pyshell#262>", line 1, in <module>
+    dict1[1:2]
+TypeError: unhashable type: 'slice'
+>>> dict1[1] = 'yek'
+>>> dict1
+{1: 'yek', 2: 'two'}
+>>> dict2 = {1:'one',2:'two',1:'yek'}
+>>> dict2
+{1: 'yek', 2: 'two'}
+>>> dict1 + dict1
+Traceback (most recent call last):
+  File "<pyshell#267>", line 1, in <module>
+    dict1 + dict1
+TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+>>> dict1 * 2
+Traceback (most recent call last):
+  File "<pyshell#268>", line 1, in <module>
+    dict1 * 2
+TypeError: unsupported operand type(s) for *: 'dict' and 'int'
+>>> len(dict1)
+2
+>>> del(dict1)
+>>> dict1
+Traceback (most recent call last):
+  File "<pyshell#271>", line 1, in <module>
+    dict1
+NameError: name 'dict1' is not defined
+>>> dict2
+{1: 'yek', 2: 'two'}
+>>> 'yek' in dict2
+False
+>>> 1 in dict2
+True
+>>> 'two' not in dict2
+True
+>>> grade = {'riazi':20,'olum': 10,'computer' : 18}
+>>> greade['riazi']
+Traceback (most recent call last):
+  File "<pyshell#277>", line 1, in <module>
+    greade['riazi']
+NameError: name 'greade' is not defined
+>>> 
+>>> grade['riazi']
+20
+>>> grade_old = grade
+>>> grade_old
+{'riazi': 20, 'olum': 10, 'computer': 18}
+>>> grade_old == grade
+True
+>>> grade is grade_old
+True
+>>> grade_copy = grade.copy()
+>>> grade is grade_copy
+False
+>>> id(grade)
+1864743931696
+>>> id(grade_copy)
+1864743930976
+>>> dict4 = {[5,4]:12}
+Traceback (most recent call last):
+  File "<pyshell#288>", line 1, in <module>
+    dict4 = {[5,4]:12}
+TypeError: unhashable type: 'list'
+>>> dict5 = {'message':{'id':12,'text':'salam'}}
+>>> l1 = [12,3,5]
+>>> str1 = 'salam'
+>>> t1 = (4,5,7)
+>>> l1[4]
+Traceback (most recent call last):
+  File "<pyshell#293>", line 1, in <module>
+    l1[4]
+IndexError: list index out of range
+>>> str1[100]
+Traceback (most recent call last):
+  File "<pyshell#294>", line 1, in <module>
+    str1[100]
+IndexError: string index out of range
+>>> t1[100]
+Traceback (most recent call last):
+  File "<pyshell#295>", line 1, in <module>
+    t1[100]
+IndexError: tuple index out of range
+>>> grade
+{'riazi': 20, 'olum': 10, 'computer': 18}
+>>> grade[2]
+Traceback (most recent call last):
+  File "<pyshell#297>", line 1, in <module>
+    grade[2]
+KeyError: 2
+>>> l1[4] = 100
+Traceback (most recent call last):
+  File "<pyshell#298>", line 1, in <module>
+    l1[4] = 100
+IndexError: list assignment index out of range
+>>> str1[100] = 'a'
+Traceback (most recent call last):
+  File "<pyshell#299>", line 1, in <module>
+    str1[100] = 'a'
+TypeError: 'str' object does not support item assignment
+>>> t1[100] = 9
+Traceback (most recent call last):
+  File "<pyshell#300>", line 1, in <module>
+    t1[100] = 9
+TypeError: 'tuple' object does not support item assignment
+>>> grade[2] = 2
+>>> garde
+Traceback (most recent call last):
+  File "<pyshell#302>", line 1, in <module>
+    garde
+NameError: name 'garde' is not defined
+>>> grade
+{'riazi': 20, 'olum': 10, 'computer': 18, 2: 2}
+>>> grade.clear()
+>>> grade
+{}
+>>> dict2
+{1: 'yek', 2: 'two'}
+>>> dict2.keys()
+dict_keys([1, 2])
+>>> dict2.values()
+dict_values(['yek', 'two'])
+>>> dict2.items()
+dict_items([(1, 'yek'), (2, 'two')])
+>>> dict2.get(2)
+'two'
+>>> dict2.get(2)
+'two'
+>>> dict2.get(3)
+>>> dict2.get(3,'kilid peyda nashod')
+'kilid peyda nashod'
+>>> dict2[3]
+Traceback (most recent call last):
+  File "<pyshell#314>", line 1, in <module>
+    dict2[3]
+KeyError: 3
+>>> dict2.setdefault(2)
+'two'
+>>> dict2.setdefault(3,'harchi ke ma bekhaim')
+'harchi ke ma bekhaim'
+>>> dict2
+{1: 'yek', 2: 'two', 3: 'harchi ke ma bekhaim'}
+>>> dict2[100] = 'sad'
+>>> dict2
+{1: 'yek', 2: 'two', 3: 'harchi ke ma bekhaim', 100: 'sad'}
+>>> dict2.pop(2)
+'two'
+>>> dict2
+{1: 'yek', 3: 'harchi ke ma bekhaim', 100: 'sad'}
+>>> dict2.pop(3)
+'harchi ke ma bekhaim'
+>>> dict2.pop(4)
+Traceback (most recent call last):
+  File "<pyshell#323>", line 1, in <module>
+    dict2.pop(4)
+KeyError: 4
+>>> dict2.pop(4,'kilid nist')
+'kilid nist'
+>>> obj1 = {1:6}
+>>> obj2 = {1}
+>>> type(obj1)
+<class 'dict'>
+>>> type(obj2)
+<class 'set'>
+>>> set1 = {4,3,6,8,0}
+>>> set1[3]
+Traceback (most recent call last):
+  File "<pyshell#330>", line 1, in <module>
+    set1[3]
+TypeError: 'set' object does not support indexing
+>>> obj1.clear()
+>>> obj1
+{}
+>>> obj2.clear()
+>>> obj2
+set()
+>>> obj2.add(10)
+>>> obj2
+{10}
+>>> obj2.add(100)
+>>> obj2
+{10, 100}
+>>> obj2.remove(10)
+>>> obj2
+{100}
+>>> obj2.remove(10)
+Traceback (most recent call last):
+  File "<pyshell#341>", line 1, in <module>
+    obj2.remove(10)
+KeyError: 10
+>>> obj2.discard(100)
+>>> obj2
+set()
+>>> obj2.discard(10)
+>>> set1 = {3,4,7,2,7,2,9}
+>>> len(set1)
+5
+>>> set1
+{2, 3, 4, 7, 9}
+>>> set1.add(9)
+>>> set1
+{2, 3, 4, 7, 9}
+>>> set1.add(99)
+>>> set1
+{2, 3, 4, 99, 7, 9}
+>>> set1.pop()
+2
+>>> set1
+{3, 4, 99, 7, 9}
+>>> set1.pop()
+3
+>>> 
+>>> 
+>>> set1.pop()
+4
+>>> set1.pop()
+99
+>>> set1.pop()
+7
+>>> set1.pop()
+9
+>>> set1.pop()
+Traceback (most recent call last):
+  File "<pyshell#361>", line 1, in <module>
+    set1.pop()
+KeyError: 'pop from an empty set'
+>>> set1.add(10)
+>>> set1.add(4)
+>>> set1.add('salam')
+>>> set1
+{'salam', 4, 10}
+>>> set1.update('salam')
+>>> set1
+{'s', 'salam', 4, 10, 'a', 'l', 'm'}
+>>> a = {1,2,3}
+>>> b = {3,4,5}
+>>> c = {5,6}
+>>> a.union(b)
+{1, 2, 3, 4, 5}
+>>> a.intersection(b)
+{3}
+>>> d = {4,5}
+>>> b.issubset(d)
+False
+>>> d.issubset(b)
+True
+>>> a.intersection(b)
+{3}
+>>> a.difference(b)
+{1, 2}
+>>> a.symmetric_difference(b)
+{1, 2, 4, 5}
+>>> 
