@@ -1,0 +1,1018 @@
+Python 3.6.8 (tags/v3.6.8:3c6b436a57, Dec 24 2018, 00:16:47) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> input('esm kuchik khodetuno vared konid')
+esm kuchik khodetuno vared konidmohammad
+'mohammad'
+>>> Name = input('First Name ')
+First Name Mohammad
+>>> print(Name)
+Mohammad
+>>> Num1 = 10
+>>> Num2 = 4
+>>> Num3 = 5
+>>> pritn(Num1,Num2,Num3)
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    pritn(Num1,Num2,Num3)
+NameError: name 'pritn' is not defined
+>>> print(Num1,Num2,Num3)
+10 4 5
+>>> print(Num1,Num2,Num3,sep = ',')
+10,4,5
+>>> Name = input('First Name: ')
+First Name: Mohammad
+>>> Last = input('Last Name: ')
+Last Name: Esmaeeli
+>>> print('salam',Name,Last)
+salam Mohammad Esmaeeli
+>>> input()
+Mohammad
+'Mohammad'
+>>> Age = input('Sene khodetuno vared konid:
+		
+SyntaxError: EOL while scanning string literal
+>>> Age = input('Sene khodetuno vared konid: ')
+		
+Sene khodetuno vared konid: 27
+>>> result = Age * 2
+		
+>>> print(result)
+		
+2727
+>>> Age
+		
+'27'
+>>> str1 = 'salam'
+		
+>>> str1 * 2
+		
+'salamsalam'
+>>> str(12)
+		
+'12'
+>>> int(Age)
+		
+27
+>>> Age = int(Age)
+		
+>>> Age
+		
+27
+>>> Age = int(input('Sene khodetuno vared konid: '))
+		
+Sene khodetuno vared konid: 29
+>>> result = Age * 2
+		
+>>> print(result)
+		
+58
+>>> int('salam')
+		
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    int('salam')
+ValueError: invalid literal for int() with base 10: 'salam'
+>>> 
+== RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/p11-s1.py ==
+Enter First Name: Mohammad
+Enter Last Name: Esmaeeli
+Salam Mohammad Esmaeeli
+>>> Num4 = 78
+		
+>>> Num4
+		
+78
+>>> print(Num4)
+		
+78
+>>> 
+== RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/p11-s1.py ==
+>>> 
+== RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/p11-s1.py ==
+100
+>>> 
+== RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/p11-s1.py ==
+adad aval ro vared konid10
+adad dovom ro vared konid3
+Traceback (most recent call last):
+  File "C:/Users/esmae/AppData/Local/Programs/Python/Python36/p11-s1.py", line 4, in <module>
+    print(Num6 * Num7)
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> 
+== RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/p11-s1.py ==
+adad aval ro vared konid10
+adad dovom ro vared konid3
+30
+>>> 
+== RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/p11-s1.py ==
+adad aval ro vared konid
+
+
+
+Python 3.6.8 (tags/v3.6.8:3c6b436a57, Dec 24 2018, 00:16:47) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+adad aval ro vared konid1
+adad dovom ro vared  konid2
+2
+>>> str1 = 'salam. man mohammad hastam'
+>>> print(str1)
+salam. man mohammad hastam
+>>> str2 = 'salam.
+SyntaxError: EOL while scanning string literal
+>>> str2 = 'salam.\nman mohammad hastam.'
+>>> print(str2)
+salam.
+man mohammad hastam.
+>>> str3 = """salam.
+man mohammad hastam.
+27 sal sen daram."""
+>>> print(str3)
+salam.
+man mohammad hastam.
+27 sal sen daram.
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+adad aval ro vared konid10
+adad dovom ro vared  konid3
+1
+>>> 10 % 3
+1
+>>> 10 % 5
+0
+>>> 10 % 3 == 2
+False
+>>> 10 % 5 == 2
+False
+>>> 10 % 5 == 0
+True
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+adad aval ro vared konid10
+adad dovom ro vared  konid3
+False
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+adad aval ro vared konid10
+adad dovom ro vared  konid5
+True
+>>> if = 5
+SyntaxError: invalid syntax
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+adad aval ro vared konid10
+adad dovom ro vared  konid5
+True
+bakhshpaziri
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+adad aval ro vared konid11
+adad dovom ro vared  konid3
+False
+done
+>>> print(Num6)
+11
+>>> print(Num7)
+3
+>>> Num6 % Num7 == 0
+False
+>>> Num6 = 10
+>>> Num7 = 5
+>>> Num6 % Num7 == 0
+True
+>>> if True:
+	print('salam')
+
+	
+salam
+>>> if False:
+	print('salam')
+
+	
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+adad aval ro vared konid 10
+adad dovom ro vared  konid 5
+bakhshpaziri
+done
+>>> 
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+adad aval ro vared konid 11
+adad dovom ro vared  konid 3
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid15
+gher bakhshpazir
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid16
+bakhshpazir
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid9
+gher bakhshpazir
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 6
+bakhshpaziri faghat bar 2
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 8
+bakhshpaziri bar 4
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 12
+mosbat
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid -8
+manfi
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 12
+mosbat
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid -8
+manfi
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 12
+mosbat
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid -8
+manfi
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 0
+mosbat
+manfi
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 12
+mosbat
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid -8
+manfi
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 0
+mosbat
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 19
+javan
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 35
+miansal
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 89
+salmand
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 12
+positive
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 0
+positive
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 0
+positive
+zero
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 5
+positive
+negative
+done
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 0.1
+Traceback (most recent call last):
+  File "C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py", line 17, in <module>
+    Num = int(input('yek adad vared konid '))
+ValueError: invalid literal for int() with base 10: '0.1'
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 0.1
+positive
+done
+>>> float(10)
+10.0
+>>> int(13.4)
+13
+>>> float(int(10.1))
+10.0
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 6
+are
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 6
+are
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 8
+are
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 7
+are
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 12
+are
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 
+Traceback (most recent call last):
+  File "C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py", line 17, in <module>
+    Num = int(input('yek adad vared konid '))
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+are
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+na
+>>> if 7:
+	print('done')
+
+	
+done
+>>> if 0:
+	print('done')
+
+	
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+Traceback (most recent call last):
+  File "C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py", line 58, in <module>
+    print(Num)
+KeyboardInterrupt
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 10
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 10
+10
+8
+6
+4
+2
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 10
+10
+7
+4
+1
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 80
+80
+85
+90
+95
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 900
+900
+905
+910
+915
+920
+925
+930
+935
+940
+945
+950
+955
+960
+965
+970
+975
+980
+985
+990
+995
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 15
+15
+14
+13
+12
+11
+residam be 10
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 29
+29
+hop
+28
+27
+26
+25
+24
+23
+22
+hop
+21
+20
+19
+18
+17
+16
+15
+hop
+14
+13
+12
+11
+10
+9
+8
+hop
+7
+6
+5
+4
+3
+2
+1
+hop
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 29
+29
+hop
+27
+26
+25
+24
+23
+22
+hop
+20
+19
+18
+17
+16
+15
+hop
+13
+12
+11
+10
+9
+8
+hop
+6
+5
+4
+3
+2
+1
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 6
+6
+5
+4
+3
+2
+1
+body else
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 6
+6
+5
+4
+3
+2
+1
+body else
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 29
+>>> l1
+[29, 'hop', 27, 26, 25, 24, 23, 22, 'hop', 20, 19, 18, 17, 16, 15, 'hop', 13, 12, 11, 10, 9, 8, 'hop', 6, 5, 4, 3, 2, 1]
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+yek adad vared konid 12
+3
+4
+7
+7
+8
+9
+0
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+3
+4
+7
+7
+8
+9
+0
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+s
+a
+l
+a
+ 
+a
+n
+ 
+o
+h
+a
+a
+d
+ 
+h
+a
+s
+t
+a
+.
+ 
+2
+7
+ 
+s
+a
+l
+ 
+s
+e
+n
+ 
+d
+a
+r
+a
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+3
+0
+9
+8
+7
+7
+4
+3
+Traceback (most recent call last):
+  File "C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py", line 88, in <module>
+    print(l2[index])
+IndexError: list index out of range
+>>> l2[-8]
+Traceback (most recent call last):
+  File "<pyshell#42>", line 1, in <module>
+    l2[-8]
+IndexError: list index out of range
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+0
+9
+8
+7
+7
+4
+3
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+0
+9
+8
+7
+7
+4
+3
+0
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+0
+9
+8
+7
+7
+4
+3
+>>> l1
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    l1
+NameError: name 'l1' is not defined
+>>> l2
+[3, 4, 7, 7, 8, 9, 0]
+>>> sum(l2)
+38
+>>> month = [31,28,31,30,31]
+>>> sum(month)
+151
+>>> sum(month[:2])
+59
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+3
+4
+7
+7
+8
+9
+0
+>>> str1 = 'salam chetori?'
+>>> for value in str1:
+	print(value)
+
+	
+s
+a
+l
+a
+m
+ 
+c
+h
+e
+t
+o
+r
+i
+?
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+>>> Num
+100000000
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+salam
+salam
+salam
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+salam
+salam
+salam
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+6
+3
+3
+84
+12
+9
+12
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+6
+3
+3
+84
+12
+9
+12
+Traceback (most recent call last):
+  File "C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py", line 113, in <module>
+    length = len(l2)
+NameError: name 'l2' is not defined
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+6
+3
+3
+84
+12
+9
+12
+6
+3
+3
+84
+12
+9
+12
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+Traceback (most recent call last):
+  File "C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py", line 113, in <module>
+    length = len(l1)
+NameError: name 'l1' is not defined
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+6
+3
+3
+84
+12
+9
+12
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+salam
+salam
+salam
+>>> obj1 = range(10)
+>>> obj
+Traceback (most recent call last):
+  File "<pyshell#55>", line 1, in <module>
+    obj
+NameError: name 'obj' is not defined
+>>> obj1
+range(0, 10)
+>>> type(obj1)
+<class 'range'>
+>>> range(100)
+range(0, 100)
+>>> range(5,11)
+range(5, 11)
+>>> for sub in range(10):
+	print(sub)
+
+	
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> for sub in range(5,11):
+	print(sub)
+
+	
+5
+6
+7
+8
+9
+10
+>>> for sub in range(2,25,3):
+	print(sub)
+
+	
+2
+5
+8
+11
+14
+17
+20
+23
+>>> list(range(101))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+>>> tuple(range(5,11))
+(5, 6, 7, 8, 9, 10)
+>>> 
+== RESTART: C:\Users\esmae\AppData\Local\Programs\Python\Python36\p11-s1.py ==
+>>> Num
+100000000
+>>> range(0,-5,-1)
+range(0, -5, -1)
+>>> for i in range(0,-5,-1):
+	print(i)
+
+	
+0
+-1
+-2
+-3
+-4
+>>> 
