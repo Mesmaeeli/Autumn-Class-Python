@@ -26,6 +26,7 @@ Last Name: Esmaeeli
 >>> print('salam',Name,Last)
 salam Mohammad Esmaeeli
 >>> input()
+
 Mohammad
 'Mohammad'
 >>> Age = input('Sene khodetuno vared konid:
