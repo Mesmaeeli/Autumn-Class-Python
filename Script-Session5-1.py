@@ -455,4 +455,234 @@ TypeError: __init__() missing 2 required positional arguments: 'arg1' and 'arg2'
 3
 >>> p4.y
 0
+>>> l1 = [4,67,2]
+>>> l2 = [6,10,5,18]
+>>> l1 + l2
+[4, 67, 2, 6, 10, 5, 18]
+>>> 45 + 32
+77
+>>> def ezafe(obj1,obj2):
+	return (obj1.x + obj2.x,obj1.y + obj2.y)
+
+>>> p4.x
+3
+>>> p4.y
+0
+>>> p5 = coordinate(10,6)
+>>> ezafe(p4,p5)
+(13, 6)
+>>> class coordinate:
+	def __init__(self, arg1 = 0,arg2 = 0):
+		self.x = arg1
+		self.y = arg2
+
+	def fasele_az(self):
+		return (self.x ** 2 + self.y ** 2)**0.5
+	def show(self):
+		print('x in noghte: ',self.x,'y in noghte: ',self.y)
+	def ezafe(self,other):
+		return (self.x + other.x,self.y + other.y)
+
+	
+>>> p5 = coordinate(10,6)
+>>> p4 = coordinate(5,3)
+>>> p5.ezafe(p4)
+(15, 9)
+>>> class coordinate:
+	def __init__(self, arg1 = 0,arg2 = 0):
+		self.x = arg1
+		self.y = arg2
+
+	def fasele_az(self):
+		return (self.x ** 2 + self.y ** 2)**0.5
+	def show(self):
+		print('x in noghte: ',self.x,'y in noghte: ',self.y)
+	def ezafe3(self,other1,other2):
+		return (self.x + other1.x + other2.x,self.y + other1.y + other2.y)
+
+	
+>>> p5 = coordinate(10,6)
+>>> p4 = coordinate(5,3)
+>>> p5.ezafe3(p4,p5)
+(25, 15)
+>>> p5 + p4
+Traceback (most recent call last):
+  File "<pyshell#245>", line 1, in <module>
+    p5 + p4
+TypeError: unsupported operand type(s) for +: 'coordinate' and 'coordinate'
+>>> str1 = 'salam'
+>>> str2 = 'hi'
+>>> str1 * str2
+Traceback (most recent call last):
+  File "<pyshell#248>", line 1, in <module>
+    str1 * str2
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> class coordinate:
+	def __init__(self, arg1 = 0,arg2 = 0):
+		self.x = arg1
+		self.y = arg2
+
+	def fasele_az(self):
+		return (self.x ** 2 + self.y ** 2)**0.5
+	def show(self):
+		print('x in noghte: ',self.x,'y in noghte: ',self.y)
+	def ezafe3(self,other1,other2):
+		return (self.x + other1.x + other2.x,self.y + other1.y + other2.y)
+	def __add__(self,other):
+		return (self.x + other.x,self.y + other.y)
+
+	
+>>> p5 = coordinate(10,6)
+>>> p4 = coordinate(5,3)
+>>> p5 + p4
+(15, 9)
+>>> class coordinate:
+	def __init__(self, arg1 = 0,arg2 = 0):
+		self.x = arg1
+		self.y = arg2
+
+	def fasele_az(self):
+		return (self.x ** 2 + self.y ** 2)**0.5
+	def show(self):
+		print('x in noghte: ',self.x,'y in noghte: ',self.y)
+	def ezafe3(self,other1,other2):
+		return (self.x + other1.x + other2.x,self.y + other1.y + other2.y)
+	def __add__(self,other):
+		X = self.x + other.x
+		Y = self.y + other.y
+		if X > 10:
+			X -= 10
+			Y += 1
+		return (X,Y)
+
+	
+>>> p5 = coordinate(10,6)
+>>> p4 = coordinate(5,3)
+>>> p4 + p5
+(5, 10)
+>>> print(p4)
+<__main__.coordinate object at 0x00000229D26D5FD0>
+>>> p4
+<__main__.coordinate object at 0x00000229D26D5FD0>
+>>> str1 = 'salam'
+>>> print(str1)
+salam
+>>> str1
+'salam'
+>>> class coordinate:
+	def __init__(self, arg1 = 0,arg2 = 0):
+		self.x = arg1
+		self.y = arg2
+
+	def fasele_az(self):
+		return (self.x ** 2 + self.y ** 2)**0.5
+	def show(self):
+		print('x in noghte: ',self.x,'y in noghte: ',self.y)
+	def ezafe3(self,other1,other2):
+		return (self.x + other1.x + other2.x,self.y + other1.y + other2.y)
+	def __add__(self,other):
+		X = self.x + other.x
+		Y = self.y + other.y
+		if X > 10:
+			X -= 10
+			Y += 1
+		return (X,Y)
+	def __str__(self):
+		return (str(self.x)+':'+str(self.y))
+
+	
+>>> p4 = coordinate(5,3)
+>>> print(p4)
+5:3
+>>> print(p4)
+5:3
+>>> p4
+<__main__.coordinate object at 0x00000229D26D5C88>
+>>> class coordinate:
+	def __init__(self, arg1 = 0,arg2 = 0):
+		self.x = arg1
+		self.y = arg2
+
+	def fasele_az(self):
+		return (self.x ** 2 + self.y ** 2)**0.5
+	def show(self):
+		print('x in noghte: ',self.x,'y in noghte: ',self.y)
+	def ezafe3(self,other1,other2):
+		return (self.x + other1.x + other2.x,self.y + other1.y + other2.y)
+	def __add__(self,other):
+		X = self.x + other.x
+		Y = self.y + other.y
+		if X > 10:
+			X -= 10
+			Y += 1
+		return (X,Y)
+	def __str__(self):
+		return (str(self.x)+':'+str(self.y))
+	def __repr__(self):
+		return (str(self.x)+':'+str(self.y))
+
+	
+>>> p4 = coordinate(5,3)
+>>> print(p4)
+5:3
+>>> p4
+5:3
+>>> p4.show()
+x in noghte:  5 y in noghte:  3
+>>> print(p4)
+5:3
+>>> p4
+5:3
+>>> 
+= RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/class_s5.py =
+>>> p4 = coordinate(3,4)
+>>> p5 = coordinate(5,10)
+>>> p4 + p5
+(8, 14)
+>>> p4.show()
+x in noghte:  3 y in noghte:  4
+>>> 
+= RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/class_s5.py =
+(8, 14)
+x in noghte:  3 y in noghte:  4
+>>> 
+= RESTART: C:/Users/esmae/AppData/Local/Programs/Python/Python36/class_s5.py =
+(8, 14)
+x in noghte:  3 y in noghte:  4
+3:4
+>>> class coordinate:
+	def __init__(self, arg1 = 0,arg2 = 0):
+		self.x = arg1
+		self.y = arg2
+
+	def fasele_az(self):
+		return (self.x ** 2 + self.y ** 2)**0.5
+	def show(self):
+		print('x in noghte: ',self.x,'y in noghte: ',self.y)
+	def ezafe3(self,other1,other2):
+		return (self.x + other1.x + other2.x,self.y + other1.y + other2.y)
+	def __add__(self,other):
+		X = self.x + other.x
+		Y = self.y + other.y
+		if X > 10:
+			X -= 10
+			Y += 1
+		return (X,Y)
+	def __str__(self):
+		return (str(self.x)+':'+str(self.y))
+	def __repr__(self):
+		return (str(self.x)+':'+str(self.y))
+	def __sub__(self,other):
+		return (self.x - other.x, self.y - other.y)
+
+	
+>>> p4 = coordinate(3,4)
+>>> p5 = coordinate(5,10)
+>>> p5 - p4
+(2, 6)
+>>> p4 = coordinate(3,4)
+>>> p4.x
+3
+>>> p4.y
+4
 >>> 
